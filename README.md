@@ -1,7 +1,5 @@
+#A totally legit yoga page
 
+[See the page in action](https://tayakinotenshi.github.io/5-yoga/)
 
-Requirements:
-github page
-fixed width container, aligned to the middle
-header: header + nav
-png images
+A fictional web page for a business that's probably doing very well.
