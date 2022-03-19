@@ -1,3 +1,10 @@
+body, body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
 body {
     background-color:rgb(216, 174, 124);
     margin-left: calc(50% - 450px);
@@ -5,6 +12,9 @@ body {
 }
 
 header, main {
+    background-color:rgb(226, 184, 134);
+    border-radius: 30px;
+    padding: 20px;
     width: 900px;
     display: inline-block;
     /*border: #990000 solid;*/
@@ -21,43 +31,88 @@ header {
 
 nav {
     float: right;
+    height: 37px;
 }
 
-a {
+nav > div > a {
     font-size: 24px;
-    margin-left: 34px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-bottom: 1px;
     color: #000;
     text-decoration: none;
+    border-bottom: 3px solid transparent;
 }
 
-a:hover {
-    border-bottom: 3px solid royalblue;
+nav * {
+    display: inline-block;
+}
+
+/*Makes sure the nav bar fits*/
+nav > div > a:first-child {
+    margin-bottom: 10px;
+}
+
+nav > div {
+    background-color:rgb(246, 204, 154);
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    height: 37px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 8px;
+}
+
+nav > div:nth-child(2):hover {
+    height: 120px;
+}
+
+nav > div > a:nth-child(2) {
+    margin-top: 10px;
+    border: #990000 solid;
+}
+
+nav > div a:hover {
+    border-bottom: 3px solid rgb(81, 104, 195);
 }
 
 main {
-    margin-top: 100px;
+    display: inline-block;
+    margin-top: 50px;
 }
 
-#signupbox {
+main > div {
     margin-top: 10px;
     float: left;
-    width: 300px;
+    width: 350px;
     font-size: 22px;
     text-align: center;
 }
 
-button {
+main > div > a {
+    margin-top: 20px;
     font-size: 32px;
+    text-decoration: none;
+    color: black;
+    border: #ffffff solid;
     border-radius: 10px;
     padding: 3px;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: royalblue;
+    background-color: rgb(81, 104, 195);
 }
 
-#meditation {
-    float: right;
+h1 {
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+main > img {
+    margin-left: 50px;
     width: 450px;
+    height: 100%;
+    object-fit: contain;
 }
